@@ -125,8 +125,8 @@
       //filterTextInputs: true,
       //filterContentEditable: true
       filterInputAcceptingElements: false,
-      filterTextInputs: false,
-      filterContentEditable: false
+      filterTextInputs: true,
+      filterContentEditable: true
     }
   };
 
