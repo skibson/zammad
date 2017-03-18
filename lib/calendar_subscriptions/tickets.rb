@@ -78,11 +78,14 @@ class CalendarSubscriptions::Tickets
 
     user_locale       = @user.preferences['locale'] || 'en'
     translated_ticket = Translation.translate(user_locale, 'ticket')
+    
+    events_data = []
+    tickets.each do |ticket|
+ 
+    event_data = {}
 
- event_data = {}
-
-event_start = "#{ticket.plandatrozp}"
-event_end = "#{ticket.plandatzak}"
+    event_start = "#{ticket.plandatrozp}"
+    event_end = "#{ticket.plandatzak}"
 
       translated_state = Translation.translate(user_locale, ticket.state.name)
     if event_start == nil or event_start == ''
