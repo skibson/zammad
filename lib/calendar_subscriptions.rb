@@ -67,6 +67,7 @@ class CalendarSubscriptions
         end
         e.summary     = event_data[:summary]
         e.description = event_data[:description]
+        e.url         = event_data[:url]
         e.ip_class    = 'PRIVATE'
       end
 
